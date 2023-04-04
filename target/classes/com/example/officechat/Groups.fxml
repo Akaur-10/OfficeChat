@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="535.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officechat.GroupsController">
+   <children>
+      <ImageView fx:id="backgroundImg" fitHeight="535.0" fitWidth="868.0" pickOnBounds="true" />
+      <Button layoutX="751.0" layoutY="105.0" mnemonicParsing="false" onAction="#createGroup" text="Create Group" />
+      <TableView fx:id="tableView" layoutX="41.0" layoutY="142.0" prefHeight="348.0" prefWidth="794.0" style="-fx-background-color: #789275;">
+        <columns>
+          <TableColumn fx:id="groupName" minWidth="0.0" prefWidth="154.39998626708984" text="Group Name" />
+          <TableColumn fx:id="members" prefWidth="634.4001159667969" text="Members" />
+        </columns>
+      </TableView>
+      <Button layoutX="242.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadInbox" opacity="0.0" prefHeight="46.0" prefWidth="34.0" text="Inbox" />
+      <Button layoutX="317.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadCompose" opacity="0.0" prefHeight="46.0" prefWidth="34.0" text="Compose" />
+      <Button layoutX="389.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadSent" opacity="0.0" prefHeight="46.0" prefWidth="34.0" text="Sent" />
+      <Button layoutX="456.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadArchive" opacity="0.0" prefHeight="46.0" prefWidth="34.0" text="Archive" />
+      <Button layoutX="525.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadGroups" opacity="0.0" prefHeight="46.0" prefWidth="34.0" text="Groups" />
+      <Button layoutX="594.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadContacts" opacity="0.0" prefHeight="46.0" prefWidth="34.0" text="Contacts" />
+      <Button layoutX="815.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadLogout" opacity="0.0" prefHeight="46.0" prefWidth="34.0" text="Logout" />
+      <Label layoutX="41.0" layoutY="98.0" text="Groups">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="statusBar" layoutX="688.0" layoutY="31.0" prefHeight="38.0" prefWidth="120.0" style="-fx-background-color: #dee4dd;" />
+   </children>
+</AnchorPane>
